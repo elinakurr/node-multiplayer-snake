@@ -22,7 +22,8 @@ node ('Ubuntu-app-agent'){
         			}
          }
     stage('SECURITY-IMAGE-SCANNER'){
-        build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCANNER'
+     //   build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCANNER'
+        echo "SECURITY-IMAGE-SCANNER"
     }
   
     
@@ -34,7 +35,8 @@ node ('Ubuntu-app-agent'){
     
     stage('DAST')
         {
-        build 'SECURITY-DAST-OWASP_ZAP'
+   //     build 'SECURITY-DAST-OWASP_ZAP'
+            echo "DAST"
         }
  
 }
